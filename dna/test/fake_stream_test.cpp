@@ -130,6 +130,6 @@ TEST_CASE("Fake person fulfills Person concept", "[stream]")
 	});
 
 	person_tester<fake_person> tester(std::cout, person);
-	tester.dump_chromosomes();
+	//tester.dump_chromosomes();
 }
 

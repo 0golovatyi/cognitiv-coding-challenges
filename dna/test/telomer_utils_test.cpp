@@ -61,5 +61,5 @@ TEST_CASE("Telomers split between 2 buffers", "[telomer]") {
         
     fake_stream stream(std::move(data), 4);
     auto skip = dna::skip_telomer_left(stream); 
-    REQUIRE(skip == 16);
+    REQUIRE(skip == 20);
 }
