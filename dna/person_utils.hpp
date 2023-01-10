@@ -85,6 +85,10 @@ std::set<interesting_distinction> compare(P& person1, P& person2) {
         stream2.seek(idx2);
 
         auto start = find_first_distinct_char(stream1, stream2);
+        if (start == stream1.size() * 4 || start == stream2.size() * 4) {
+            continue;
+        }
+        
         stream1.seek(idx1 + start);
         stream2.seek(idx2 + start);
 
